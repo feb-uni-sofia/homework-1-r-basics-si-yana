@@ -1,0 +1,232 @@
+
+R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> lintr::lint("Problem_2.R")
+Problem_2.R:4:16: style: Commas should always have a space after.
+xmin <- c(23.0,20.5,28.2,20.3,22.4,17.2,18.2)
+               ^
+Problem_2.R:4:21: style: Commas should always have a space after.
+xmin <- c(23.0,20.5,28.2,20.3,22.4,17.2,18.2)
+                    ^
+Problem_2.R:4:26: style: Commas should always have a space after.
+xmin <- c(23.0,20.5,28.2,20.3,22.4,17.2,18.2)
+                         ^
+Problem_2.R:4:31: style: Commas should always have a space after.
+xmin <- c(23.0,20.5,28.2,20.3,22.4,17.2,18.2)
+                              ^
+Problem_2.R:4:36: style: Commas should always have a space after.
+xmin <- c(23.0,20.5,28.2,20.3,22.4,17.2,18.2)
+                                   ^
+Problem_2.R:4:41: style: Commas should always have a space after.
+xmin <- c(23.0,20.5,28.2,20.3,22.4,17.2,18.2)
+                                        ^
+Problem_2.R:5:16: style: Commas should always have a space after.
+xmax <- c(25.0,22.8,31.2,27.3,28.4,20.2,24.1)
+               ^
+Problem_2.R:5:21: style: Commas should always have a space after.
+xmax <- c(25.0,22.8,31.2,27.3,28.4,20.2,24.1)
+                    ^
+Problem_2.R:5:26: style: Commas should always have a space after.
+xmax <- c(25.0,22.8,31.2,27.3,28.4,20.2,24.1)
+                         ^
+Problem_2.R:5:31: style: Commas should always have a space after.
+xmax <- c(25.0,22.8,31.2,27.3,28.4,20.2,24.1)
+                              ^
+Problem_2.R:5:36: style: Commas should always have a space after.
+xmax <- c(25.0,22.8,31.2,27.3,28.4,20.2,24.1)
+                                   ^
+Problem_2.R:5:41: style: Commas should always have a space after.
+xmax <- c(25.0,22.8,31.2,27.3,28.4,20.2,24.1)
+                                        ^
+Problem_2.R:8:5: style: Put spaces around all infix operators.
+xmax-xmin
+   ~^~
+Problem_2.R:14:1: style: Variable and function names should be all lowercase.
+totalMinimum <- sum(xmin)
+^~~~~~~~~~~~
+Problem_2.R:15:1: style: Variable and function names should be all lowercase.
+totalMinimum
+^~~~~~~~~~~~
+Problem_2.R:16:1: style: Variable and function names should be all lowercase.
+avgMinimum <- totalMinimum/length(xmin)
+^~~~~~~~~~
+Problem_2.R:16:15: style: Variable and function names should be all lowercase.
+avgMinimum <- totalMinimum/length(xmin)
+              ^~~~~~~~~~~~
+Problem_2.R:16:27: style: Put spaces around all infix operators.
+avgMinimum <- totalMinimum/length(xmin)
+                         ~^~
+Problem_2.R:17:1: style: Variable and function names should be all lowercase.
+avgMinimum
+^~~~~~~~~~
+Problem_2.R:19:1: style: Variable and function names should be all lowercase.
+totalMaximum <- sum(xmax)
+^~~~~~~~~~~~
+Problem_2.R:20:1: style: Variable and function names should be all lowercase.
+totalMaximum
+^~~~~~~~~~~~
+Problem_2.R:21:1: style: Variable and function names should be all lowercase.
+avgMaximum <- totalMaximum/length(xmax)
+^~~~~~~~~~
+Problem_2.R:21:15: style: Variable and function names should be all lowercase.
+avgMaximum <- totalMaximum/length(xmax)
+              ^~~~~~~~~~~~
+Problem_2.R:21:27: style: Put spaces around all infix operators.
+avgMaximum <- totalMaximum/length(xmax)
+                         ~^~
+Problem_2.R:22:1: style: Variable and function names should be all lowercase.
+avgMaximum
+^~~~~~~~~~
+Problem_2.R:25:13: style: Put spaces around all infix operators.
+xmin [c(xmin<avgMinimum)]
+           ~^~
+Problem_2.R:25:14: style: Variable and function names should be all lowercase.
+xmin [c(xmin<avgMinimum)]
+             ^~~~~~~~~~
+Problem_2.R:29:13: style: Put spaces around all infix operators.
+xmin [c(xmin>avgMinimum)]
+           ~^~
+Problem_2.R:29:14: style: Variable and function names should be all lowercase.
+xmin [c(xmin>avgMinimum)]
+             ^~~~~~~~~~
+Problem_2.R:32:13: style: Variable and function names should be all lowercase.
+xmin[xmax > avgMaximum]
+            ^~~~~~~~~~
+Problem_2.R:35:1: style: lines should not be more than 80 characters.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:35:1: style: Variable and function names should be all lowercase.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+^~~~~~~~
+Problem_2.R:35:15: style: Only use double-quotes.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+              ^~~~~~~~~
+Problem_2.R:35:25: style: Only use double-quotes.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+                        ^~~~~~~~~
+Problem_2.R:35:25: style: Commas should always have a space after.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+                        ^
+Problem_2.R:35:35: style: Only use double-quotes.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+                                  ^~~~~~~~~
+Problem_2.R:35:35: style: Commas should always have a space after.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+                                  ^
+Problem_2.R:35:45: style: Only use double-quotes.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+                                            ^~~~~~~~~
+Problem_2.R:35:45: style: Commas should always have a space after.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+                                            ^
+Problem_2.R:35:55: style: Only use double-quotes.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+                                                      ^~~~~~~~~
+Problem_2.R:35:55: style: Commas should always have a space after.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+                                                      ^
+Problem_2.R:35:65: style: Only use double-quotes.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+                                                                ^~~~~~~~~
+Problem_2.R:35:65: style: Commas should always have a space after.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+                                                                ^
+Problem_2.R:35:75: style: Only use double-quotes.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+                                                                          ^~~~~~~~~
+Problem_2.R:35:75: style: Commas should always have a space after.
+dayNames <- c('03Mon18','04Tue18','05Wed18','04Thu18','05Fri18','06Sat18','07Sun18')
+                                                                          ^
+Problem_2.R:36:16: style: Variable and function names should be all lowercase.
+names(xmin) <- dayNames
+               ^~~~~~~~
+Problem_2.R:38:16: style: Variable and function names should be all lowercase.
+names(xmax) <- dayNames
+               ^~~~~~~~
+Problem_2.R:42:34: style: Commas should always have a space after.
+Temperatures <- data.frame (xmin,xmax)
+                                 ^
+Problem_2.R:48:1: style: Variable and function names should be all lowercase.
+xminFahrenheit <- 9/5*xmin+32
+^~~~~~~~~~~~~~
+Problem_2.R:48:20: style: Put spaces around all infix operators.
+xminFahrenheit <- 9/5*xmin+32
+                  ~^~
+Problem_2.R:48:22: style: Put spaces around all infix operators.
+xminFahrenheit <- 9/5*xmin+32
+                    ~^~
+Problem_2.R:48:27: style: Put spaces around all infix operators.
+xminFahrenheit <- 9/5*xmin+32
+                         ~^~
+Problem_2.R:49:38: style: Variable and function names should be all lowercase.
+Temperatures [["xminFahrenheit"]] <- xminFahrenheit
+                                     ^~~~~~~~~~~~~~
+Problem_2.R:53:1: style: Variable and function names should be all lowercase.
+xmaxFahrenheit <- c(9/5*xmax+32)
+^~~~~~~~~~~~~~
+Problem_2.R:53:22: style: Put spaces around all infix operators.
+xmaxFahrenheit <- c(9/5*xmax+32)
+                    ~^~
+Problem_2.R:53:24: style: Put spaces around all infix operators.
+xmaxFahrenheit <- c(9/5*xmax+32)
+                      ~^~
+Problem_2.R:53:29: style: Put spaces around all infix operators.
+xmaxFahrenheit <- c(9/5*xmax+32)
+                           ~^~
+Problem_2.R:54:1: style: Variable and function names should be all lowercase.
+TemperaturesFahrenheit <- data.frame(xminFahrenheit,xmaxFahrenheit)
+^~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:54:38: style: Variable and function names should be all lowercase.
+TemperaturesFahrenheit <- data.frame(xminFahrenheit,xmaxFahrenheit)
+                                     ^~~~~~~~~~~~~~
+Problem_2.R:54:53: style: Commas should always have a space after.
+TemperaturesFahrenheit <- data.frame(xminFahrenheit,xmaxFahrenheit)
+                                                    ^
+Problem_2.R:54:53: style: Variable and function names should be all lowercase.
+TemperaturesFahrenheit <- data.frame(xminFahrenheit,xmaxFahrenheit)
+                                                    ^~~~~~~~~~~~~~
+Problem_2.R:55:1: style: Variable and function names should be all lowercase.
+TemperaturesFahrenheit
+^~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:58:1: style: Variable and function names should be all lowercase.
+TemperaturesFahrenheit1 <- TemperaturesFahrenheit[c(1:5), ]
+^~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:58:28: style: Variable and function names should be all lowercase.
+TemperaturesFahrenheit1 <- TemperaturesFahrenheit[c(1:5), ]
+                           ^~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:59:1: style: Variable and function names should be all lowercase.
+TemperaturesFahrenheit1
+^~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:62:1: style: Variable and function names should be all lowercase.
+TemperaturesFahrenheit2 <- TemperaturesFahrenheit[-c(6,7), ]
+^~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:62:28: style: Variable and function names should be all lowercase.
+TemperaturesFahrenheit2 <- TemperaturesFahrenheit[-c(6,7), ]
+                           ^~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:62:56: style: Commas should always have a space after.
+TemperaturesFahrenheit2 <- TemperaturesFahrenheit[-c(6,7), ]
+                                                       ^
+Problem_2.R:63:1: style: Variable and function names should be all lowercase.
+TemperaturesFahrenheit2
+^~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:64:1: style: Trailing blank lines are superfluous.
+
+^
+> 
+> 
