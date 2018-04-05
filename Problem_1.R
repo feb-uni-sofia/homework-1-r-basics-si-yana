@@ -8,7 +8,10 @@ y <- c(1,4)
 
 #c
 x-y 
-      # The result is such because the two vectors have a different length.
+# The result is such because the two vectors have a different length.
+
+## Explanation is not sufficient. The question was about how R deals
+## with the unequal lengths.
 
 #d 
 s <- c(x,y)
